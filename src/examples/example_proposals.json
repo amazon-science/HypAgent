@@ -1,0 +1,16 @@
+[
+  {"variable": "tenure_months", "form": "threshold", "direction": "+",
+   "text": "Retention turns on once tenure passes a cutoff."},
+  {"variable": "discount_pct", "form": "non_monotone", "direction": "+",
+   "text": "Discount has a mid-range sweet spot; both extremes hurt."},
+  {"variable": "email_opens", "form": "interaction_reversal", "moderator": "is_mobile",
+   "direction": "+", "text": "Email opens help on mobile but hurt off mobile."},
+  {"variable": "support_tickets", "form": "subpopulation", "moderator": "is_premium",
+   "direction": "-", "text": "Support tickets hurt retention only among premium users."},
+  {"variable": "logins", "form": "derived_feature", "moderator": "session_len",
+   "direction": "+", "text": "Logins times session length drives retention."},
+  {"variable": "page_views", "form": "threshold", "direction": "+",
+   "text": "More page views raise retention past a cutoff (noise guess)."},
+  {"variable": "referral_score", "form": "bare_direction", "direction": "+",
+   "text": "Higher referral score is associated with retention (no mechanism)."}
+]

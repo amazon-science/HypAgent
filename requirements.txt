@@ -1,0 +1,18 @@
+# Runtime dependencies for HypAgent. Pinned to the versions the results were
+# produced with.
+
+# Core numerics — required by both the agent (hyp_agent) and the simulator (scm).
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1     # agent value + validity gates (LinearRegression, HistGradientBoosting)
+statsmodels==0.14.6     # agent super-additivity / interaction gate (OLS)
+
+# Data files — needed only to read/write .parquet (CSV works without it).
+pyarrow==21.0.0
+
+# LLM provider SDKs — install the ONE you use (all optional, imported lazily).
+# Needed by the agent, and by the simulator only for scm.parse (--parse free text).
+boto3==1.42.97          # provider="bedrock"
+# anthropic>=0.40        # provider="anthropic"
+# openai>=1.40           # provider="openai"
