@@ -9,7 +9,7 @@ scikit-learn==1.6.1     # agent value + validity gates (LinearRegression, HistGr
 statsmodels==0.14.6     # agent super-additivity / interaction gate (OLS)
 
 # Data files — needed only to read/write .parquet (CSV works without it).
-pyarrow==21.0.0
+pyarrow==23.0.1
 
 # LLM provider SDKs — install the ONE you use (all optional, imported lazily).
 # Needed by the agent, and by the simulator only for scm.parse (--parse free text).
