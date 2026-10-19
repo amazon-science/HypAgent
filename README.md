@@ -1,5 +1,8 @@
 # HypAgent
 
+Code for [Searching for What Matters: Open-Ended Discovery of Multiple Hypotheses
+with Agentic Data Exploration](https://arxiv.org/abs/2610.17874).
+
 This code is being released solely for academic and scientific reproducibility
 purposes, in support of the methods and findings described in the associated
 publication. Pull requests are not being accepted in order to maintain the code
@@ -105,6 +108,17 @@ fraction of a method's claims survive their own `do()`. Both are defined in
 ```bash
 pip install pytest
 pytest
+```
+
+## Citation
+
+```bibtex
+@article{kabra2026searching,
+  title   = {Searching for What Matters: Open-Ended Discovery of Multiple Hypotheses with Agentic Data Exploration},
+  author  = {Kabra, Sanchit and Choudhary, Nurendra and Du, Jiangshu and Huang, Eddie and Koutra, Danai and Reddy, Chandan K.},
+  journal = {arXiv preprint arXiv:2610.17874},
+  year    = {2026}
+}
 ```
 
 ## Security
